@@ -234,7 +234,9 @@ export default function BookingModal({
           <View style={styles.footer}>
             <View style={styles.totalRow}>
               <Text style={styles.totalLabel}>Total</Text>
-              <Text style={styles.totalValue}>{formatPrice(service.price)}</Text>
+              <Text style={styles.totalValue}>
+                {formatPrice(service.price)}
+              </Text>
             </View>
             {submitting ? (
               <View style={[styles.confirmButton, styles.confirmDisabled]}>
